@@ -1,3 +1,5 @@
+// -----PART I-----
+/* 
 let userChoice;
 let randomNumber = Math.round(Math.random());
 let computerChoice;
@@ -19,12 +21,17 @@ if(userChoice === randomNumber && userChoice === 0){
   alert ("Aw, you did not match Heads ");
 }
 else {alert("Enter a correct response please")
-};
+}; */
 
+// -----PART II-----
+let birthYear
+let age
 
-// if(userChoice === "Heads" && randomNumber === 0){
-// alert("You guessed right! The coin flip landed on Heads ")
-//  console.log(randomNumber);
-// } else{console.log("Tails");
-// }
+birthYear = prompt("Enter the year you were born")
+if (birthYear == 2001){
+  alert("You are old enough to drink in the US...barely");
+}else if(birthYear < 2001){
+  alert("You are old enough to drink in the US");
+}else{alert("Sorry, you are not old enough to drink in the US");
+}
 
