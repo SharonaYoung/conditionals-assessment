@@ -10,15 +10,21 @@ if(userChoice === "Heads"){
 }else if(userChoice === "Tails"){
   userChoice = 1;
 }
+
+if(randomNumber === 0){
+  computerChoice = "Heads";
+}else{ computerChoice = "Tails";
+}
+
 console.log(randomNumber);
 if(userChoice === randomNumber && userChoice === 0){
-  alert ("Yay, you matched Heads ");
+  alert ("Yay, you matched " + computerChoice);
 } else if(userChoice === randomNumber && userChoice === 1){
-  alert ("Yay, you matched Tails");
+  alert ("Yay, you matched" + computerChoice);
 } else if(userChoice !== randomNumber && userChoice === 0){
-  alert ("Aw, you did not match Tails ");
+  alert ("Aw, you did not match " + computerChoice);
 } else if(userChoice !== randomNumber && userChoice === 1){
-  alert ("Aw, you did not match Heads ");
+  alert ("Aw, you did not match " + computerChoice);
 }
 else {alert("Enter a correct response please")
 }; 
