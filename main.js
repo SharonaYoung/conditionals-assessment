@@ -1,5 +1,5 @@
 // -----PART I-----
-/* 
+
 let userChoice;
 let randomNumber = Math.round(Math.random());
 let computerChoice;
@@ -21,8 +21,7 @@ if(userChoice === randomNumber && userChoice === 0){
   alert ("Aw, you did not match Heads ");
 }
 else {alert("Enter a correct response please")
-}; */
-
+}; 
 // -----PART II-----
 let birthYear
 let age
