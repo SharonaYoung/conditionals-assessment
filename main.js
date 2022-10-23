@@ -1,33 +1,21 @@
 // -----PART I-----
 
-let userChoice;
+let userChoice = prompt("Heads or Tails");
 let randomNumber = Math.round(Math.random());
 let computerChoice;
-
-userChoice = prompt("Heads or Tails");
-if(userChoice === "Heads"){
-  userChoice = 0;
-}else if(userChoice === "Tails"){
-  userChoice = 1;
-}
 
 if(randomNumber === 0){
   computerChoice = "Heads";
 }else{ computerChoice = "Tails";
 }
-
-console.log(randomNumber);
-if(userChoice === randomNumber && userChoice === 0){
+if(userChoice === computerChoice){
   alert ("Yay, you matched " + computerChoice);
-} else if(userChoice === randomNumber && userChoice === 1){
-  alert ("Yay, you matched" + computerChoice);
-} else if(userChoice !== randomNumber && userChoice === 0){
-  alert ("Aw, you did not match " + computerChoice);
-} else if(userChoice !== randomNumber && userChoice === 1){
+} else if(userChoice !== computerChoice){
   alert ("Aw, you did not match " + computerChoice);
 }
 else {alert("Enter a correct response please")
 }; 
+
 // -----PART II-----
 let birthYear
 let age
